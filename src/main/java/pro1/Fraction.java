@@ -9,7 +9,17 @@ public class Fraction
         long gcd = NumericUtils.gcd(d, n);
         this.n = n;
         this.d = d;
+    }
 
-        
+    public static Fraction parse(String s){
+
+        return new Fraction(1,1);
+    }
+
+    @Override
+    public String toString() {
+        return n + "/" + d;
     }
 }
+
+

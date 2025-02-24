@@ -4,7 +4,7 @@ public class NumericUtils {
 
     public static long gcd(long a, long b)
     {
-
-        return 1;
+    if (b == 0) return a;
+    return gcd(b, a % b);
     }
 }
