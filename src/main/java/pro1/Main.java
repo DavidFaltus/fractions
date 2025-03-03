@@ -5,7 +5,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,7 +19,7 @@ public class Main {
         {
             System.out.println("Reading "+inputFile);
             ExamRecord[] records = readInputFile(inputFile.toPath());
-            System.out.println("Ukázka: "+records[0].getName());
+            System.out.println("První človek v souboru: "+records[0].getName());
         }
     }
 
