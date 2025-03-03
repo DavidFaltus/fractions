@@ -5,10 +5,10 @@ import java.nio.file.Path;
 public class ExamRecord
 {
     private String name;
-    private Fraction score;
+    private Fraction fraction;
 
-    public ExamRecord(String name, Fraction score) {
-        this.score = score;
+    public ExamRecord(String name, Fraction fraction) {
+        this.fraction = fraction;
         this.name = name;
     }
 
@@ -16,7 +16,7 @@ public class ExamRecord
         return name;
     }
 
-    public Fraction getScore() {
-        return score;
+    public Fraction getFraction() {
+        return fraction;
     }
 }
